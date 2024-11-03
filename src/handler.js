@@ -2,7 +2,6 @@
 /* eslint-disable no-trailing-spaces */
 const { nanoid } = require('nanoid');
 const notes = require('./notes');
-const { status } = require('express/lib/response');
 
 const addNoteHandler = (request, h) => {
   const { title, tags, body } = request.payload;
